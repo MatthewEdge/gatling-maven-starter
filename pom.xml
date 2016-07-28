@@ -10,7 +10,7 @@
 
     <properties>
         <gatling.version>2.2.0</gatling.version>
-        <gatling-plugin.version>2.2.0</gatling-plugin.version>
+        <gatling.plugin.version>2.2.0</gatling.plugin.version>
         <gatling.skip>false</gatling.skip>
 
         <!-- Information required to start EC2 instances and control them via SSH -->
@@ -71,7 +71,7 @@
             <plugin>
                 <groupId>io.gatling</groupId>
                 <artifactId>gatling-maven-plugin</artifactId>
-                <version>${gatling-plugin.version}</version>
+                <version>${gatling.plugin.version}</version>
                 <executions>
                     <execution>
                         <phase>compile</phase>
