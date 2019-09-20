@@ -29,6 +29,8 @@ object Settings {
  */
 class Settings(config: Config) extends RichConfig(config) {
 
+	val baseUrl: String = getRequired[String]("app.baseUrl")
+
 	// FindFailure Settings
 	val chunkScaleFactor = get[Int]("app.chunkScaleFactor").getOrElse(1000)
 	val responseTimeLimit = get[Int]("app.response.limit.millis").getOrElse(3000) // 3 seconds

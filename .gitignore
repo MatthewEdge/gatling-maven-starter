@@ -3,3 +3,9 @@
 *.iml
 out
 gen
+target/
+.classpath
+.project
+.factorypath
+.settings/
+.vscode/
