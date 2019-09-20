@@ -10,7 +10,7 @@ import io.gatling.http.Predef._
  */
 trait GatlingAppConfig {
 
-	val settings = Settings()
+	val settings = Settings
 
 	def httpConf(baseUrl: String) =
 		http

@@ -7,4 +7,6 @@ RUN mvn dependency:go-offline clean compile
 
 # Execute
 COPY src /usr/src/app/src
-CMD mvn test
+
+ARG BASE_URL="http://localhost:8080"
+CMD ["mvn", "test", "-DbaseUrl=${BASE_URL}"]
